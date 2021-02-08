@@ -1,0 +1,99 @@
+/*Smal devices (phones, 414px and up)*/
+@media (min-width: $mobile) {}
+
+/* Medium devices (tablets, 700px and up)*/
+@media (min-width: $tablet) {}
+
+/* Extra large devices (large desktops, 1440px and up)*/
+@media (min-width: $desktop) {}
+
+.gridrowfull {
+    width: 100%;
+}
+
+.gridrow {
+    margin: 0 auto;
+    width: $gridwidth-mobile;
+
+    @media (min-width:$tablet) {
+        width: $gridwidth-tablet;
+    }
+
+    @media (min-width:$desktop) {
+        width: $gridwidth-desktop;
+    }
+}
+
+.gridrowfull,
+.gridrow {
+    display: flex;
+    flex-wrap: wrap;
+
+    @for $i from 1 through $gridcolumns-mobile {
+        .col#{$i} {
+            box-sizing: border-box;
+            width: percentage($i/$gridcolumns-mobile);
+            padding-left: $gridgutter-mobile / 2;
+            padding-right: $gridgutter-mobile / 2;
+        }
+
+        .offset#{$i} {
+            margin-left: percentage($i/$gridcolumns-mobile);
+        }
+
+    }
+
+    @media screen and (min-width: $tablet) {
+        @for $i from 1 through $gridcolumns-tablet {
+            .col-t#{$i} {
+                width: percentage($i/$gridcolumns-tablet);
+            }
+
+            .offset-t#{$i} {
+                margin-left: percentage($i/$gridcolumns-tablet);
+            }
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        @for $i from 1 through $gridcolumns-desktop {
+            .col-d#{$i} {
+                box-sizing: border-box;
+                width: percentage($i/$gridcolumns-desktop);
+                padding-left: $gridgutter-desktop / 2;
+                padding-right: $gridgutter-desktop / 2;
+            }
+
+            .offset-d#{$i} {
+                margin-left: percentage($i/$gridcolumns-desktop);
+            }
+        }
+    }
+
+    &.nogutter {
+        @for $i from 1 through $gridcolumns-mobile {
+            .col#{$i} {
+                padding: 0;
+            }
+        }
+    }
+    @media screen and (min-width) {
+        
+    }
+
+    &.nogutter {
+        @for $i from 1 through $gridcolumns-tablet {
+            .col-t#{$i} {
+                padding: 0;
+            }
+        }
+    }
+
+    &.nogutter {
+        @for $i from 1 through $gridcolumns-desktop {
+            .col-d#{$i} {
+                padding: 0;
+            }
+        }
+    }
+}
