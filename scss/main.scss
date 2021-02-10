@@ -8,11 +8,17 @@ body {
         padding-right: 24px;
     }
 
+    h1 {
+        color: $white;
+        padding-left: 24px;
+
+    }
+
     h2 {
         font-size: 24px;
         color: $primary;
         padding-left: 24px;
-        
+
     }
 
     h3 {
@@ -21,14 +27,58 @@ body {
         line-height: 21px;
     }
 
-    .cta {
+    h4 {
+        font-size: 16px;
+        text-align: center;
+        line-height: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 
+    img {
+        margin-top:40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cta {
+        display: block;
         background-color: $primary;
         font-family: $titlesfont;
         font-weight: $titlesfont;
         font-size: 18px;
         color: $white;
-        padding: 17 17 17 17;
+        width: 300px;
+        height: 48px;
+        padding: 13 21 13 21;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    #caixa {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 365px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .iconz {
+        width: 80px;
+        height: auto;
         margin: 0 auto;
+    }
+
+    #img1 {
+        margin-top: 20px;
+    }
+
+    .about {
+        background-color: $warmgrey;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }

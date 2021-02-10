@@ -291,7 +291,6 @@ body h6 {
 
 .imgfit {
   display: block;
-  width: 100%;
   height: auto;
 }
 
@@ -714,6 +713,11 @@ body p {
   padding-right: 24px;
 }
 
+body h1 {
+  color: #FFF;
+  padding-left: 24px;
+}
+
 body h2 {
   font-size: 24px;
   color: #ED282D;
@@ -726,12 +730,99 @@ body h3 {
   line-height: 21px;
 }
 
+body h4 {
+  font-size: 16px;
+  text-align: center;
+  line-height: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+body img {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 body .cta {
+  display: block;
   background-color: #ED282D;
   font-family: "CentraNo2";
   font-weight: "CentraNo2";
   font-size: 18px;
   color: #FFF;
-  padding: 17 17 17 17;
+  width: 300px;
+  height: 48px;
+  padding: 13 21 13 21;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+body #caixa {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  width: 365px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body .iconz {
+  width: 80px;
+  height: auto;
   margin: 0 auto;
+}
+
+body #img1 {
+  margin-top: 20px;
+}
+
+body .about {
+  background-color: #E8E6DA;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.margintopnone {
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+label {
+  font-size: 14px;
+  font-family: "CentraNo2";
+  font-weight: "400";
+  color: #828282;
+  margin-left: 24px;
+}
+
+input {
+  border-box: none;
+  display: block;
+  width: 300px;
+  height: 43px;
+  /* padding-top: 11px;
+    padding-bottom: 11px; */
+  padding-left: 15px;
+  border-style: 1px solid #828282;
+}
+
+.submit {
+  display: block;
+  background-color: #ED282D;
+  font-family: "CentraNo2";
+  font-weight: "CentraNo2";
+  font-size: 18px;
+  color: #FFF;
+  width: 300px;
+  height: 48px;
+  padding: 13 21 13 21;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
