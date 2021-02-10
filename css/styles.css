@@ -246,11 +246,11 @@ body h6 {
 }
 
 .animate {
-  /* -webkit-transition: all $animationtime ease; 
-    -moz-transition: all $animationtime ease;
-    -ms-transition: all $animationtime ease;
-    -o-transition: all $animationtime ease;
-    transition: all $animationtime ease; */
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 .textleft {
@@ -697,4 +697,41 @@ body h6 {
 .gridrowfull.nogutter .col-d12,
 .gridrow.nogutter .col-d12 {
   padding: 0;
+}
+
+footer {
+  background-color: F5F5EF;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+body p {
+  font-size: 14px;
+  text-align: left;
+  line-height: 21px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+body h2 {
+  font-size: 24px;
+  color: #ED282D;
+  padding-left: 24px;
+}
+
+body h3 {
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 21px;
+}
+
+body .cta {
+  background-color: #ED282D;
+  font-family: "CentraNo2";
+  font-weight: "CentraNo2";
+  font-size: 18px;
+  color: #FFF;
+  padding: 17 17 17 17;
+  margin: 0 auto;
 }

@@ -1,0 +1,34 @@
+body {
+
+    p {
+        font-size: 14px;
+        text-align: left;
+        line-height: 21px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: $primary;
+        padding-left: 24px;
+        
+    }
+
+    h3 {
+        padding-left: 24px;
+        padding-right: 24px;
+        line-height: 21px;
+    }
+
+    .cta {
+
+        background-color: $primary;
+        font-family: $titlesfont;
+        font-weight: $titlesfont;
+        font-size: 18px;
+        color: $white;
+        padding: 17 17 17 17;
+        margin: 0 auto;
+    }
+}
