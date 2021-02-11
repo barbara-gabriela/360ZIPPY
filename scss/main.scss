@@ -91,14 +91,41 @@ body {
     }
 
     .ig-card {
-        border: 5px solid $white;
         background-color:$white;
-        width: 295px;
-        height: 344px;
+        width: 205px;
+        height: 239px;
     }
 
     .img-instagram {
+        display: inline-block;
         width: 170px;
         height: auto;
     }
 }
+
+*Testimonial Section*/
+#testimonials {
+  text-align: center;
+  background-color: #EF8172;
+  color: #fff;
+}
+.testimonials-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.carousel-item {
+  padding: 7% 15%;
+}
+#press {
+  background-color: #EF8172;
+  color: #fff;
+  padding-bottom: 3%;
+  text-align: center;
+}
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+  text-align: center;
+}
+9:16

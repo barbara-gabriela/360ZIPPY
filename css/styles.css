@@ -795,13 +795,13 @@ body .date {
 }
 
 body .ig-card {
-  border: 5px solid #FFF;
   background-color: #FFF;
-  width: 295px;
-  height: 344px;
+  width: 205px;
+  height: 239px;
 }
 
 body .img-instagram {
+  display: inline-block;
   width: 170px;
   height: auto;
 }
