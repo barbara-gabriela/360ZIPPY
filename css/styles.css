@@ -236,13 +236,14 @@ body {
   font-size: 14px;
 }
 
-body h1
-h2,
+body h1,
+body h2,
 body h3,
 body h4,
 body h5,
 body h6 {
   font-family: "CentraNo2", sans serif;
+  font-weight: "CentraNo2";
 }
 
 .animate {
@@ -738,6 +739,10 @@ body h4 {
   padding-right: 24px;
 }
 
+body h5 {
+  font-size: 10px;
+}
+
 body img {
   margin-top: 40px;
   margin-left: auto;
@@ -785,7 +790,23 @@ body .about {
   padding-bottom: 20px;
 }
 
-.margintopnone {
+body .date {
+  color: #7F7F7F;
+}
+
+body .ig-card {
+  border: 5px solid #FFF;
+  background-color: #FFF;
+  width: 295px;
+  height: 344px;
+}
+
+body .img-instagram {
+  width: 170px;
+  height: auto;
+}
+
+.title {
   margin-top: 40px;
   font-size: 16px;
   text-align: center;
@@ -809,6 +830,12 @@ input {
     padding-bottom: 11px; */
   padding-left: 15px;
   border-style: 1px solid #828282;
+  align-items: center;
+}
+
+.email {
+  display: flex;
+  width: 100%;
   align-items: center;
 }
 
