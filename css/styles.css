@@ -699,11 +699,84 @@ body h6 {
   padding: 0;
 }
 
-footer {
-  background-color: F5F5EF;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+body > header {
+  background-color: #FFF;
+}
+
+body > header nav {
+  box-shadow: 1px 5px 8px 2px #333333;
+}
+
+body > header nav #burguer {
+  width: auto;
+  height: 19px;
+  margin-top: 63px;
+}
+
+body > header nav #logo {
+  display: inline-block;
+  width: 63px;
+  height: auto;
+  margin-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+body > header nav ul {
+  height: 30px;
+  list-style-type: none;
+  margin: 0;
+}
+
+body > header nav ul li {
+  display: inline-block;
+}
+
+body > header nav ul li a {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 30px;
+  height: 30px;
+  letter-spacing: 1px;
+  color: #ED282D;
+}
+
+@media (min-width: 1440px) {
+  body > header nav ul li a {
+    letter-spacing: 2px;
+  }
+}
+
+body > header nav#customermenu i {
+  font-family: "CentraNo2";
+  font-weight: "400";
+  color: #ED282D;
+  display: inline-block;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+@media (min-width: 708px) {
+  body > header nav#customermenu i {
+    margin-left: 6.66667px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body > header nav#customermenu i {
+    margin-left: 10px;
+  }
+}
+
+body > header #mainmenu {
+  display: none;
+}
+
+body > header .mobile-colapse {
+  display: none;
 }
 
 body p {
@@ -856,39 +929,21 @@ input {
   margin-bottom: 40px;
 }
 
-body > header {
-  background-color: #FFF;
+footer {
+  background-color: F5F5EF;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-body > header nav {
-  /* padding-top: 115px; */
-  list-style: none;
+* {
+  box-sizing: border-box;
 }
 
-body > header nav li {
-  list-style: none;
-  display: inline-block;
+body .poly1 {
+  position: absolute;
 }
 
-body > header #burguer {
-  width: auto;
-  height: 19px;
-  margin-top: 63px;
-}
-
-body > header #logo {
-  width: 63px;
-  height: auto;
-  margin-top: 45px;
-  margin-bottom: 12px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body > header #mainmenu {
-  display: none;
-}
-
-body > header .mobile-colapse {
-  display: none;
+.poly2 {
+  position: absolute;
 }
