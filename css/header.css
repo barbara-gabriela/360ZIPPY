@@ -1,0 +1,21 @@
+body > header nav {
+  padding-top: 115px;
+}
+
+body > header #burguer {
+  width: auto;
+  height: 19px;
+}
+
+body > header #logo {
+  width: 63px;
+  height: auto;
+}
+
+body > header #mainmenu {
+  display: none;
+}
+
+body > header .mobile-colapse {
+  display: none;
+}

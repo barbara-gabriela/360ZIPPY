@@ -39,7 +39,7 @@ body {
         font-size: 10px;
     }
 
-    img {
+    .img-exp {
         margin-top:40px;
         margin-left: auto;
         margin-right: auto;
@@ -71,6 +71,7 @@ body {
     }
 
     .iconz {
+        margin-top: 40px;
         width: 80px;
         height: auto;
         margin: 0 auto;
@@ -103,29 +104,3 @@ body {
     }
 }
 
-*Testimonial Section*/
-#testimonials {
-  text-align: center;
-  background-color: #EF8172;
-  color: #fff;
-}
-.testimonials-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
-}
-.carousel-item {
-  padding: 7% 15%;
-}
-#press {
-  background-color: #EF8172;
-  color: #fff;
-  padding-bottom: 3%;
-  text-align: center;
-}
-.press-logo {
-  width: 15%;
-  margin: 20px 20px 50px;
-  text-align: center;
-}
-9:16

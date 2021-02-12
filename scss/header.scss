@@ -1,0 +1,87 @@
+body {
+
+    >header {
+        background-color: $white;
+
+
+
+        nav {
+
+            box-shadow: 1px 5px 8px 2px $black;
+            
+
+            #burguer {
+                width: auto;
+                height: 19px;
+                margin-top: 63px;
+            }
+
+            #logo {
+                display: inline-block;
+                width: 63px;
+                height: auto;
+                margin-top: 45px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 12px;
+            }
+
+            ul {
+                height: $gridgutter * 1.5;
+                list-style-type: none;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-size: 0.75rem;
+                        line-height: $gridgutter * 1.5;
+                        height: $gridgutter * 1.5;
+                        letter-spacing: 1px;
+                        color: $primary;
+
+                        @media(min-width: $desktop) {
+                            letter-spacing: 2px;
+                        }
+
+                    }
+
+                   }
+                }
+
+                &#customermenu {
+                    i {
+                        font-family: $bodyfont;
+                        font-weight: $bodyfontweights;
+                        color: $primary;
+                        display: inline-block;
+                        font-size: 1.2rem;
+                        margin-left: $gridgutter / 2;
+
+                        @media(min-width: $tablet) {
+                            margin-left: $gridgutter / 3;
+                        }
+
+                        @media(min-width: $desktop) {
+                            margin-left: $gridgutter / 2;
+                        }
+                    }
+                }
+            }
+
+            #mainmenu {
+                display: none;
+            }
+
+
+
+            .mobile-colapse {
+                display: none;
+            }
+        }
+    }
+

@@ -20,16 +20,18 @@
 </head>
 
 <body>
-    <header class="bg-white">
+    <header>
         <nav class="gridrow">
-            <div class="col-5 col-d3" id="logo">
+            <div>
+                <img srcset="../imgs/icon-hamburguer.png" id="burguer" class="textleft" />
+            </div>
+            <div id="logo">
                 <!--imagem logo canto esquerdo-->
                 <a href="index.html" title="Ir para a página inicial">
-                    <!--imagem do logo?--> <img class="imgfit" src="../imgs/zippy-logo.png" alt="Zippy Logo" />
+                    <!--imagem do logo?-->
+                    <img class="imgfit" src="../imgs/zippy-logo.png" alt="Zippy Logo" />
                 </a>
-                <img srcset="../imgs/" />
             </div>
-            <div>
                 <ul id="mainmenu" class="col-12 col-t-6">
                     <li>
                         <a href="#" title="Menina">MENINA <i class="icn-chevron-down"></i></a>
@@ -53,18 +55,24 @@
                         <a href="#" title="Box">ZIPPY IN A BOX <i class="icn-chevron-down"></i></a>
                     </li>
                 </ul>
-                <ul id="costumermenu" class="col-7 textright col-t-3">
-                    <li>
-                        <a href="#" title="Pesquisar"><i class="icn-search"></i>Pesquisar</a>
+                <ul id="costumermenu" class="textright col-t-3">
+                    
+                    <li class="mobile-colapse">
+                        <a href="#" title="Pesquisar"><i></i>Pesquisar</a>
                     </li>
-                    <li>
+                    <li class="mobile-colapse">
                         <a href="#" title="Entrar"><i class="icn-login"></i>Entrar</a>
                     </li>
                     <li>
-                        <a href="#" title="Cesto"><i class="icn-basket"></i>0</a>
+                        <img srcset="../imgs/icon-search.png" alt="search button" class="icon-search">
+                    </li>
+                    <li>
+                        <img srcset="../imgs/icon-basket.png" alt="basket" class=icon-basket>
+                    </li>
+                    <li>
+                        <a id="basket-am">0</a>
                     </li>
                 </ul>
-            </div>
         </nav>
     </header>
     <main>
@@ -102,11 +110,11 @@
             <button class="cta" type="submit">Vamos Fazer uma Box?</button>
         </form>
         <section class="about">
-            <img class="imgfit" id="img1" srcset="../imgs/1a-imagem.png" alt="kid-crayons">
+            <img class="imgfit img-exp" id="img1" srcset="../imgs/1a-imagem.png" alt="kid-crayons">
             <h4>A Zippy sabe que os pais perdem muito tempo na procura dos essenciais para os seus filhos.</h4>
-            <img class="imgfit" srcset="../imgs/2a-imagem.png" alt="parents-boat">
+            <img class="imgfit img-exp" srcset="../imgs/2a-imagem.png" alt="parents-boat">
             <h4>Não nos esquecemos dos pais!</h4>
-            <img class="imgfit" srcset="../imgs/3a-imagem.png" alt="kid-painting">
+            <img class="imgfit img-exp" srcset="../imgs/3a-imagem.png" alt="kid-painting">
             <h4>Sabemos que a tecnologia cada vez mais está presente no dia-a-dia dos vossos filhos.</h4>
             <form action="../html/quiz.html">
                 <button class="cta" type="submit">Vamos Fazer uma Box?</button>
