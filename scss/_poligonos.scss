@@ -5,50 +5,51 @@
 body {
 
     .poly1 {
-        position:absolute;
+        position: absolute;
         top: 1121.2px;
-        left: 317.87px; 
+        left: 317.87px;
     }
 
-.poly2 {
-    position:absolute;
-    top: 1179.3px;
-    right: 313.43px; 
-}
+    .poly2 {
+        position: absolute;
+        top: 1179.3px;
+        right: 313.43px;
+    }
 
-.poly3 {
-    position:absolute;
-    top: 1568px;
-    right: 331.36px; 
-}
+    .poly3 {
+        position: absolute;
+        top: 1568px;
+        right: 331.36px;
+    }
 
-.poly4 {
-    position:absolute;
-    top: 1578px;
-    left: 344px; 
-}
+    .poly4 {
+        position: absolute;
+        top: 1578px;
+        left: 344px;
+    }
 
-.poly5 {
-    position:absolute;
-    top: 1739px;
-    left: 274px; 
-}
+    .poly5 {
+        position: absolute;
+        top: 1739px;
+        left: 274px;
+    }
 
-.poly6 {
-    position:absolute;
-    top: 2098px;
-    right: 365px; 
-}
+    .poly6 {
+        position: absolute;
+        top: 2098px;
+        right: 365px;
+    }
 
-.poly7 {
-    position:absolute;
-    top: 2420px;
-    left: 344px; 
-}
+    .poly7 {
+        position: absolute;
+        top: 2420px;
+        left: 344px;
+    }
 
-.poly8 {
-    position:absolute;
-    top: 2907px;
-    right: 231.14px; 
-}
+    .poly8 {
+        position: absolute;
+        top: 2907px;
+        right: 231.14px;
+        z-index: -99;
+    }
 }

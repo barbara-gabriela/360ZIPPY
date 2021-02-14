@@ -6,35 +6,33 @@ body {
         font-size: 14px;
         text-align: left;
         line-height: 21px;
-        padding-left: 24px;
-        padding-right: 24px;
+        font-weight: 400;
+        padding-top: 24px;
     }
 
-    h1 {
-        color: $white;
-        padding-left: 24px;
-
-    }
+   
 
     h2 {
         font-size: 24px;
         color: $primary;
-        padding-left: 24px;
-
+        font-weight: 700;
+        padding-top: 40px;
+        
     }
 
     h3 {
-        padding-left: 24px;
-        padding-right: 24px;
-        line-height: 21px;
+        font-size: 18px;
+        line-height: 25.5px;
+        font-weight: 400;
+        padding-top: 24px;
     }
 
     h4 {
         font-size: 16px;
         text-align: center;
         line-height: 24px;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     h5 {

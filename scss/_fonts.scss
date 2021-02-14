@@ -24,6 +24,7 @@ body {
     font-family: $bodyfont, sans serif;
     color: $black;
     font-size: 14px;
+    font-weight: $bodyfontweights;
   
     h1,
     h2,
@@ -32,6 +33,6 @@ body {
     h5,
     h6 {
       font-family: $titlesfont, sans serif;
-      font-weight: $titlesfont;
+      font-weight: $titlesfontweights;
     }
   }

@@ -31,7 +31,7 @@
     <img class="poly7" srcset="../poly-mb/triângulo.png" alt="triângulo">
     <img class="poly8" srcset="../poly-mb/square-2.png" alt="quadrado-amarelo">
     <header>
-        <nav class="gridrow">
+        <nav class="gridrowfull">
             <div>
                 <img srcset="../imgs/icon-hamburguer.png" id="burguer" class="textleft" />
             </div>
@@ -84,28 +84,33 @@
                 </li>
             </ul>
         </nav>
+        <section>
+            <div class="my-banner">
+                <img class="banner" srcset="../imgs/banner.png" alt="hero-image">
+                <div class="sub-container">
+                    <h1 class="banner-title">A Zippy In A Box <br>chegou!</h1>
+                    <div class="btnBox">
+                        <div>
+                            <button class="cta-banner" type="submit">Vamos Fazer uma Box?</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </header>
     <main>
-
-        <section>
-            <img srcset="../imgs/banner.png" alt="hero-image">
-            <h1>A Zippy In A Box chegou!</h1>
-            <button class="cta">Vamos fazer uma Box?</button>
-        </section>
-        </header>
         <!--PRODUCT DETAILS-->
         <section>
-            <h2>Zippy In A Box</h2>
-            <p>Queremos continuar ao vosso lado em todos os momentos, e fazer parte do vosso crescimento
+            <h2 class="gridrow">Zippy In A Box</h2>
+            <p class="gridrow">Queremos continuar ao vosso lado em todos os momentos, e fazer parte do vosso crescimento
                 acompanhando os
                 vossos momentos com a partilha de experiências, criatividade e aprendizagem. </p>
-            <h3>Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
+            <h3 class="gridrow">Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
             <img class="imgfit" id="caixa" srcset="../imgs/caixa.png" alt="zippy-in-a-box">
         </section>
         <section>
             <article class="textcenter">
                 <img class="iconz" class="iconz iczdev" srcset="../imgs/icon-lista.png" alt="icon-lista" />
-                <h4>A diversão começa aqui! <br>Faça o quiz para ter a experiência mais personalizada.</h4>
+                <h4 class="gridrow">A diversão começa aqui! <br>Faça o quiz para ter a experiência mais personalizada.</h4>
             </article>
             <article class="textcenter">
                 <img class="iconz" class="iconz iczdev" srcset="../imgs/icon-box.png" alt="icon-box" />
@@ -113,7 +118,7 @@
             </article>
             <article class="textcenter">
                 <img class="iconz" class="iconz iczdev" srcset="../imgs/icon-confetti.png" alt="icon-confetti" />
-                <h4>Desembrulhe um mundo de brincadeira!</h4>
+                <h4>Desembrulhe um mundo<br>de brincadeira!</h4>
             </article>
         </section>
         <form action="../html/quiz.html">
@@ -121,11 +126,11 @@
         </form>
         <section class="about">
             <img class="imgfit img-exp" id="img1" srcset="../imgs/1a-imagem.png" alt="kid-crayons">
-            <h4>A Zippy sabe que os pais perdem muito tempo na procura dos essenciais para os seus filhos.</h4>
+            <h4>A Zippy sabe que os pais perdem muito tempo<br>na procura dos essenciais para os seus filhos.</h4>
             <img class="imgfit img-exp" srcset="../imgs/2a-imagem.png" alt="parents-boat">
             <h4>Não nos esquecemos dos pais!</h4>
             <img class="imgfit img-exp" srcset="../imgs/3a-imagem.png" alt="kid-painting">
-            <h4>Sabemos que a tecnologia cada vez mais está presente no dia-a-dia dos vossos filhos.</h4>
+            <h4>Sabemos que a tecnologia cada vez mais está<br>presente no dia-a-dia dos vossos filhos.</h4>
             <form action="../html/quiz.html">
                 <button class="cta" type="submit">Vamos Fazer uma Box?</button>
             </form>
@@ -202,33 +207,42 @@
 
         </section>
     </main>
-    <footer>
-        <p>Deixa o teu e-mail e serás o primeiro a receber as novidades.</p>
-        <div class="newsletter">
-            <p class="title">SUBSCREVA A NOSSA NEWSLETTER</p>
-            <div class="form-group required">
-                <label>E-mail</label>
-                <form class="gridrowfull">
-                    <div class="email">
-                        <input type="email" placeholder="Introduza o seu e-mail" name="email" />
-                    </div>
-                    <button class="submit" type="submit">Subscrever</button>
-            </div>
-            </form>
+
+    <p class="gridrow">Deixa o teu e-mail e serás o primeiro a receber as novidades.</p>
+    <div class="newsletter">
+        <p class="title">SUBSCREVA A NOSSA NEWSLETTER</p>
+        <div class="form-group required">
+            <label>E-mail</label>
+            <form class="gridrowfull">
+                <div class="email">
+                    <input type="email" placeholder="Introduza o seu e-mail" name="email" />
+                </div>
+                <button class="submit" type="submit">Subscrever</button>
         </div>
-        <div class="gridrow">
-            <div class="col-4 col-d-2">
+        </form>
+    </div>
+    <footer>
+        <div class="gridrowfull footer-2">
+            <div class="col-12 col-d-2">
                 <section>
                     <ul>
-                        <li><button><i></i>LOJAS ZIPPY</button></li>
-                        <li><button><i></i>ENTREGAS</button></li>
-                        <li><button><i></i>TROCAS E DEVOLUÇÕES</button></li>
+                        <li><button class="btn-footer"><i></i>LOJAS ZIPPY</button></li>
                     </ul>
                 </section>
                 <section>
                     <ul>
-                        <li>AJUDA
-                            <ul>
+                        <li><button class="btn-footer"><i></i>ENTREGAS</button></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><button class="btn-footer"><i></i>TROCAS E DEVOLUÇÕES</button></li>
+                    </ul>
+                </section>
+                <section>
+                    <ul>
+                        <li><button class="btn-footer">AJUDA</button>
+                            <ul class="dropdown">
                                 <li>Perguntas Frequentes</li>
                                 <li>Condições Gerais de Venda</li>
                                 <li>Promoções e Campanhas</li>
@@ -241,8 +255,8 @@
                 </section>
                 <section>
                     <ul>
-                        <li>SOBRE A ZIPPY
-                            <ul>
+                        <li><button class="btn-footer">SOBRE A ZIPPY</button>
+                            <ul class="dropdown">
                                 <li>A Nossa História</li>
                                 <li>Qualidade</li>
                                 <li>Grupo SONAE</li>
@@ -255,8 +269,8 @@
                 </section>
                 <section>
                     <ul>
-                        <li>SIGA-NOS
-                            <ul>
+                        <li><button class="btn-footer">SIGA-NOS</button>
+                            <ul class="dropdown">
                                 <li>Facebook</li>
                                 <li>Instagram</li>
                             </ul>
@@ -265,8 +279,8 @@
                 </section>
                 <section>
                     <ul>
-                        <li>AJUDA PUERICULTURA
-                            <ul>
+                        <li><button class="btn-footer">AJUDA PUERICULTURA</button>
+                            <ul class="dropdown">
                                 <li>Cadeiras Auto</li>
                                 <li>Puericultura Leve</li>
                                 <li>Brinquedos</li>
@@ -275,24 +289,40 @@
                     </ul>
                 </section>
                 <section>
-                    <a><i></i> Português | Portugal</a>
-                    <!--oi oi não sei se faz sentido-->
+                    <ul>
+                        <li>
+                            <a><i></i> Português | Portugal</a>
+                            <!--oi oi não sei se faz sentido-->
+                        </li>
+                    </ul>
                 </section>
-                <button>Voltar ao Topo</button>
-                <p>© Zippy 2021. Todos os direitos reservados.</p>
             </div>
+        </div>
+        <div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top" onclick="topFunction()" id="myBtn"
+                title="Go to top" class=" topo"><i></i>Voltar ao <br> Topo</button>
+        </div>
+        <div class="bottom-footer">
+            <p>© Zippy 2021. Todos os direitos reservados.</p>
         </div>
     </footer>
     <script>
-        const myCarousel = document.querySelector('#myCarousel')
-        const carousel = new bootstrap.Carousel(myCarousel)
-        const myCarousel = document.getElementById('myCarousel')
-        const carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 2000,
-            wrap: false
-        })
-        myCarousel.addEventListener('slide.bs.carousel', function () {
-        })
+        const mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
