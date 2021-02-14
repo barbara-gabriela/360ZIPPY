@@ -1,0 +1,37 @@
+.carousel {
+
+    background-color: $warmgrey;
+    padding-bottom: 40px;
+
+    #carouselExampleIndicators {
+
+        .carousel-indicators {
+            top: 250px;
+        }
+    }
+
+    .carousel-inner {
+        margin: 0 auto;
+
+        .carousel-item {
+            align-items: center;
+        }
+    }
+
+    .carousel-control-prev {
+        top:250px;
+
+        .carousel-control-prev-icon {
+            color: $primary;
+        }
+    }
+
+    .carousel-control-next {
+        top:250px;
+
+        .carousel-control-next-icon {
+            color: $primary;
+        }
+    }
+
+}

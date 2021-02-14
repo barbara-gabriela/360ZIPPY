@@ -22,27 +22,43 @@
 </head>
 
 <body>
-    <img class="poly1" srcset="../poly-mb/meio-circulo.png" alt="Meio-Círculo">
-    <img class="poly2" srcset="../poly-mb/polygon-3.png" alt="poligono">
-    <img class="poly3" srcset="../poly-mb/square-1.png" alt="quadrado-azul">
-    <img class="poly4" srcset="../poly-mb/triângulo.png" alt="triângulo">
-    <img class="poly5" srcset="../poly-mb/polygon-3.png" alt="poligono">
-    <img class="poly6" srcset="../poly-mb/ellipse.png" alt="elipse">
-    <img class="poly7" srcset="../poly-mb/triângulo.png" alt="triângulo">
-    <img class="poly8" srcset="../poly-mb/square-2.png" alt="quadrado-amarelo">
+    <div class="image-container-1">
+        <img class="poly1" srcset="../poly-mb/meio-circulo.png" alt="Meio-Círculo">
+    </div>
+    <div class="image-container-2">
+        <img class="poly2" srcset="../poly-mb/polygon-3.png" alt="poligono">
+    </div>
+    <div class="image-container-3">
+        <img class="poly3" srcset="../poly-mb/square-1.png" alt="quadrado-azul">
+    </div>
+    <div class="image-container-4">
+        <img class="poly4" srcset="../poly-mb/triângulo.png" alt="triângulo">
+    </div>
+    <div class="image-container-5">
+        <img class="poly5" srcset="../poly-mb/polygon-3.png" alt="poligono">
+    </div>
+    <div class="image-container-6">
+        <img class="poly6" srcset="../poly-mb/ellipse.png" alt="elipse">
+    </div>
+    <div class="image-container-7">
+        <img class="poly7" srcset="../poly-mb/triângulo.png" alt="triângulo">
+    </div>
+    <div class="image-container-8">
+        <img class="poly8" srcset="../poly-mb/square-2.png" alt="quadrado-amarelo">
+    </div>
     <header>
         <nav class="gridrowfull">
             <div>
                 <img srcset="../imgs/icon-hamburguer.png" id="burguer" class="textleft" />
             </div>
             <div id="logo">
-                <!--imagem logo canto esquerdo-->
+                <!--imagem logo centro-->
                 <a href="index.html" title="Ir para a página inicial">
                     <!--imagem do logo?-->
                     <img class="imgfit" src="../imgs/zippy-logo.png" alt="Zippy Logo" />
                 </a>
             </div>
-            <ul id="mainmenu" class="col-12 col-t-6">
+            <ul id="mainmenu" class="col-12">
                 <li>
                     <a href="#" title="Menina">MENINA <i class="icn-chevron-down"></i></a>
                 </li>
@@ -66,7 +82,6 @@
                 </li>
             </ul>
             <ul id="costumermenu" class="textright col-t-3">
-
                 <li class="mobile-colapse">
                     <a href="#" title="Pesquisar"><i></i>Pesquisar</a>
                 </li>
@@ -84,6 +99,7 @@
                 </li>
             </ul>
         </nav>
+        <!--Banner-->
         <section>
             <div class="my-banner">
                 <img class="banner" srcset="../imgs/banner.png" alt="hero-image">
@@ -110,7 +126,8 @@
         <section>
             <article class="textcenter">
                 <img class="iconz" class="iconz iczdev" srcset="../imgs/icon-lista.png" alt="icon-lista" />
-                <h4 class="gridrow">A diversão começa aqui! <br>Faça o quiz para ter a experiência mais personalizada.</h4>
+                <h4 class="gridrow">A diversão começa aqui! <br>Faça o quiz para ter a experiência mais personalizada.
+                </h4>
             </article>
             <article class="textcenter">
                 <img class="iconz" class="iconz iczdev" srcset="../imgs/icon-box.png" alt="icon-box" />
@@ -124,6 +141,7 @@
         <form action="../html/quiz.html">
             <button class="cta" type="submit">Vamos Fazer uma Box?</button>
         </form>
+        <!--About-->
         <section class="about">
             <img class="imgfit img-exp" id="img1" srcset="../imgs/1a-imagem.png" alt="kid-crayons">
             <h4>A Zippy sabe que os pais perdem muito tempo<br>na procura dos essenciais para os seus filhos.</h4>
@@ -134,12 +152,14 @@
             <form action="../html/quiz.html">
                 <button class="cta" type="submit">Vamos Fazer uma Box?</button>
             </form>
-            <section>
-                <h2>#ZippyInABox</h2>
-                <h3>Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
+        </section>
+            <!--Carrossel-->
+            <section class="carousel">
+                <h2 class="gridrow">#ZippyInABox</h2>
+                <h3 class="gridrow">Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active style"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
@@ -151,46 +171,46 @@
                         <div class="carousel-item active">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-1.png"
                                 alt="crianças-a-brincar">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!--  <div class="carousel-caption d-none d-md-block">
                                 <h5>@Mariana_Sousa</h5>
                                 <h5 class="date">21/05/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-2.png" alt="blocos-coloridos">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!--  <div class="carousel-caption d-none d-md-block">
                                 <h5>@Mariana_Sousa</h5>
                                 <h5 class="date">21/05/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-3.png" alt="natureza">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!--  <div class="carousel-caption d-none d-md-block">
                                 <h5>@joao_lopes_23</h5>
                                 <h5 class="date">17/03/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-4.png"
                                 alt="crianças-a-brincar">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!-- <div class="carousel-caption d-none d-md-block">
                                 <h5>@Marian_castro</h5>
                                 <h5 class="date">21/05/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-5.png" alt="blocos-coloridos">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!--   <div class="carousel-caption d-none d-md-block">
                                 <h5>@paulo_rio</h5>
                                 <h5 class="date">09/02/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-6.png" alt="natureza">
-                            <div class="carousel-caption d-none d-md-block">
+                            <!--    <div class="carousel-caption d-none d-md-block">
                                 <h5>@luiza_</h5>
                                 <h5 class="date">17/03/2021</h5>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <!-- Carousel controls -->
@@ -205,12 +225,8 @@
                 </div>
             </section>
 
-        </section>
-    </main>
-
-    <p class="gridrow">Deixa o teu e-mail e serás o primeiro a receber as novidades.</p>
+    <p class="textcenter">Deixa o teu e-mail e serás o primeiro a<br>receber as novidades.</p>
     <div class="newsletter">
-        <p class="title">SUBSCREVA A NOSSA NEWSLETTER</p>
         <div class="form-group required">
             <label>E-mail</label>
             <form class="gridrowfull">
@@ -221,9 +237,10 @@
         </div>
         </form>
     </div>
+</main>
     <footer>
         <div class="gridrowfull footer-2">
-            <div class="col-12 col-d-2">
+            <div class="col4">
                 <section>
                     <ul>
                         <li><button class="btn-footer"><i></i>LOJAS ZIPPY</button></li>
@@ -300,7 +317,7 @@
         </div>
         <div>
             <button onclick="topFunction()" id="myBtn" title="Go to top" onclick="topFunction()" id="myBtn"
-                title="Go to top" class=" topo"><i></i>Voltar ao <br> Topo</button>
+                title="Go to top" class="topo"><img srset="../imgs/back-to-top.png" alt="voltar-ao-topo-botão"></button>
         </div>
         <div class="bottom-footer">
             <p>© Zippy 2021. Todos os direitos reservados.</p>

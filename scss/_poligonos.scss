@@ -4,10 +4,11 @@
 
 body {
 
-    .poly1 {
+    .image-container-1 {
         position: absolute;
         top: 1121.2px;
         left: 317.87px;
+        overflow: hidden;
     }
 
     .poly2 {
@@ -22,16 +23,18 @@ body {
         right: 331.36px;
     }
 
-    .poly4 {
+    .image-container-4 {
         position: absolute;
         top: 1578px;
         left: 344px;
+        overflow: hidden;
     }
 
-    .poly5 {
+    .image-container-5 {
         position: absolute;
         top: 1739px;
         left: 274px;
+        overflow: hidden;
     }
 
     .poly6 {
@@ -40,16 +43,17 @@ body {
         right: 365px;
     }
 
-    .poly7 {
+    .image-container-7 {
         position: absolute;
         top: 2420px;
         left: 344px;
+        overflow: hidden;
     }
 
     .poly8 {
         position: absolute;
         top: 2907px;
         right: 231.14px;
-        z-index: -99;
+        z-index:1; 
     }
 }
