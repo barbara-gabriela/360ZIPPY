@@ -15,19 +15,17 @@ body {
         }
 
         .topo {
-            border-radius: 100%;
-            background-color: white;
-            color: #ED282D;
             position: fixed;
             bottom: 20px;
             z-index: 99;
-            font-size: 18px;
-            border: none;
+            border-radius: 100%;
+            border:none;
             outline: none;
             cursor: pointer;
-            padding: 20px;
-            font-size: 0.7rem;
-            left: 250px;
+            /* left: 300px; */
+            opacity:100%;
+            padding:0;
+            right:24px;
         }
 
         .bottom-footer {

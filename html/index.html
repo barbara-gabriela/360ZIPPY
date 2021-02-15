@@ -5,8 +5,6 @@
     <title>zippy</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../css/styles.css" href="../css/reset.css"
-        href="../css/normalize.css" />
     <!-- Bootstrap scripts !-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,33 +17,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="../css/styles.css" href="../css/reset.css>
+
 </head>
 
 <body>
-    <div class="image-container-1">
-        <img class="poly1" srcset="../poly-mb/meio-circulo.png" alt="Meio-Círculo">
-    </div>
-    <div class="image-container-2">
-        <img class="poly2" srcset="../poly-mb/polygon-3.png" alt="poligono">
-    </div>
-    <div class="image-container-3">
-        <img class="poly3" srcset="../poly-mb/square-1.png" alt="quadrado-azul">
-    </div>
-    <div class="image-container-4">
-        <img class="poly4" srcset="../poly-mb/triângulo.png" alt="triângulo">
-    </div>
-    <div class="image-container-5">
-        <img class="poly5" srcset="../poly-mb/polygon-3.png" alt="poligono">
-    </div>
-    <div class="image-container-6">
-        <img class="poly6" srcset="../poly-mb/ellipse.png" alt="elipse">
-    </div>
-    <div class="image-container-7">
-        <img class="poly7" srcset="../poly-mb/triângulo.png" alt="triângulo">
-    </div>
-    <div class="image-container-8">
-        <img class="poly8" srcset="../poly-mb/square-2.png" alt="quadrado-amarelo">
-    </div>
+    <img class="poly1 anim" srcset="../poly-mb/meio-circulo.png" alt="Meio-Círculo">
+    <img class="poly2 anim" srcset="../poly-mb/polygon-3.png" alt="poligono">
+    <img class="poly3 anim" srcset="../poly-mb/square-1.png" alt="quadrado-azul">
+    <img class="poly4 anim" srcset="../poly-mb/triângulo.png" alt="triângulo">
+    <img class="poly5 anim" srcset="../poly-mb/polygon-3.png" alt="poligono">
+    <img class="poly6 anim" srcset="../poly-mb/ellipse.png" alt="elipse">
+    <img class="poly7 anim" srcset="../poly-mb/triângulo.png" alt="triângulo">
+    <img class="poly8 anim" srcset="../poly-mb/square-2.png" alt="quadrado-amarelo">
     <header>
         <nav class="gridrowfull">
             <div>
@@ -153,13 +137,15 @@
                 <button class="cta" type="submit">Vamos Fazer uma Box?</button>
             </form>
         </section>
-            <!--Carrossel-->
-            <section class="carousel">
-                <h2 class="gridrow">#ZippyInABox</h2>
-                <h3 class="gridrow">Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
+        <!--Carrossel-->
+        <section class="carousel">
+            <h2 class="gridrow">#ZippyInABox</h2>
+            <h3 class="gridrow">Estamos preparados para aterrar à porta de vossa casa e surpreender-vos!</h3>
+            <div class="container">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active style"></li>
+                    <ol class="carousel-indicators" data-role="carousel" data-bullet-style="square">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"><img
+                                src="../imgs/rectangle.png"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
@@ -171,73 +157,51 @@
                         <div class="carousel-item active">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-1.png"
                                 alt="crianças-a-brincar">
-                            <!--  <div class="carousel-caption d-none d-md-block">
-                                <h5>@Mariana_Sousa</h5>
-                                <h5 class="date">21/05/2021</h5>
-                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-2.png" alt="blocos-coloridos">
-                            <!--  <div class="carousel-caption d-none d-md-block">
-                                <h5>@Mariana_Sousa</h5>
-                                <h5 class="date">21/05/2021</h5>
-                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-3.png" alt="natureza">
-                            <!--  <div class="carousel-caption d-none d-md-block">
-                                <h5>@joao_lopes_23</h5>
-                                <h5 class="date">17/03/2021</h5>
-                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-4.png"
                                 alt="crianças-a-brincar">
-                            <!-- <div class="carousel-caption d-none d-md-block">
-                                <h5>@Marian_castro</h5>
-                                <h5 class="date">21/05/2021</h5>
-                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-5.png" alt="blocos-coloridos">
-                            <!--   <div class="carousel-caption d-none d-md-block">
-                                <h5>@paulo_rio</h5>
-                                <h5 class="date">09/02/2021</h5>
-                            </div> -->
                         </div>
                         <div class="carousel-item">
                             <img class="img-instagram d-block" srcset="../imgs/instagram-6.png" alt="natureza">
-                            <!--    <div class="carousel-caption d-none d-md-block">
-                                <h5>@luiza_</h5>
-                                <h5 class="date">17/03/2021</h5>
-                            </div> -->
                         </div>
                     </div>
                     <!-- Carousel controls -->
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                        data-slide="prev"><img src="../imgs/contro-prev.png">
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                        data-slide="next"><img src="../imgs/contro-next.png">
                     </a>
                 </div>
-            </section>
+            </div>
+        </section>
+        </section>
 
-    <p class="textcenter">Deixa o teu e-mail e serás o primeiro a<br>receber as novidades.</p>
-    <div class="newsletter">
-        <div class="form-group required">
-            <label>E-mail</label>
-            <form class="gridrowfull">
-                <div class="email">
-                    <input type="email" placeholder="Introduza o seu e-mail" name="email" />
-                </div>
-                <button class="submit" type="submit">Subscrever</button>
+        <p class="textcenter">Deixa o teu e-mail e serás o primeiro a<br>receber as novidades.</p>
+        <div class="newsletter">
+            <div class="form-group required">
+                <label>E-mail</label>
+                <form class="gridrowfull">
+                    <div class="gridrow">
+                        <div class="email">
+                            <input type="email" placeholder="Introduza o seu e-mail" name="email" />
+                        </div>
+                    </div>
+                    <button class="submit" type="submit">Subscrever</button>
+            </div>
+            </form>
         </div>
-        </form>
-    </div>
-</main>
+    </main>
     <footer>
         <div class="gridrowfull footer-2">
             <div class="col4">
@@ -316,8 +280,8 @@
             </div>
         </div>
         <div>
-            <button onclick="topFunction()" id="myBtn" title="Go to top" onclick="topFunction()" id="myBtn"
-                title="Go to top" class="topo"><img srset="../imgs/back-to-top.png" alt="voltar-ao-topo-botão"></button>
+            <button onclick="topFunction()" id="myBtn" title="Go to top" class="topo"><img src="../imgs/back-to-top.png"
+                    alt="voltar-ao-topo-botão"></button>
         </div>
         <div class="bottom-footer">
             <p>© Zippy 2021. Todos os direitos reservados.</p>

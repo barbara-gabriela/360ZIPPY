@@ -4,11 +4,21 @@
 
 body {
 
-    .image-container-1 {
+    .anim{
         position: absolute;
-        top: 1121.2px;
+          -webkit-animation:spin 13s linear infinite;
+          -moz-animation:spin 13s linear infinite;
+          animation:spin 13s linear infinite;
+      }
+      @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+      @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+      @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      
+
+    .poly1 {
+        position: absolute;
+        top: 1176.2px;
         left: 317.87px;
-        overflow: hidden;
     }
 
     .poly2 {
@@ -23,18 +33,18 @@ body {
         right: 331.36px;
     }
 
-    .image-container-4 {
+    .poly4 {
         position: absolute;
         top: 1578px;
-        left: 344px;
-        overflow: hidden;
+        left: 355px;
+
     }
 
-    .image-container-5 {
+    .poly5 {
         position: absolute;
         top: 1739px;
         left: 274px;
-        overflow: hidden;
+
     }
 
     .poly6 {
@@ -43,7 +53,7 @@ body {
         right: 365px;
     }
 
-    .image-container-7 {
+    .poly7 {
         position: absolute;
         top: 2420px;
         left: 344px;
@@ -54,6 +64,6 @@ body {
         position: absolute;
         top: 2907px;
         right: 231.14px;
-        z-index:1; 
+        z-index:-2; 
     }
 }

@@ -6,10 +6,6 @@ html {
   /* 2 */
 }
 
-body {
-  margin: 0;
-}
-
 main {
   display: block;
 }
@@ -934,7 +930,7 @@ body .newsletter label {
 
 body .newsletter input {
   display: block;
-  width: 300px;
+  width: 366px;
   height: 43px;
   /* padding-top: 11px;
     padding-bottom: 11px; */
@@ -945,7 +941,7 @@ body .newsletter input {
 
 body .newsletter .email {
   display: flex;
-  width: 100%;
+  width: 366px;
   align-items: center;
 }
 
@@ -979,19 +975,17 @@ body footer .btn-footer {
 }
 
 body footer .topo {
-  border-radius: 100%;
-  background-color: white;
-  color: #ED282D;
   position: fixed;
   bottom: 20px;
   z-index: 99;
-  font-size: 18px;
+  border-radius: 100%;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 20px;
-  font-size: 0.7rem;
-  left: 250px;
+  /* left: 300px; */
+  opacity: 100%;
+  padding: 0;
+  right: 24px;
 }
 
 body footer .bottom-footer {
@@ -1053,11 +1047,36 @@ body footer ul li ul li {
   box-sizing: border-box;
 }
 
-body .image-container-1 {
+body .anim {
   position: absolute;
-  top: 1121.2px;
+  -webkit-animation: spin 13s linear infinite;
+  -moz-animation: spin 13s linear infinite;
+  animation: spin 13s linear infinite;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body .poly1 {
+  position: absolute;
+  top: 1176.2px;
   left: 317.87px;
-  overflow: hidden;
 }
 
 body .poly2 {
@@ -1072,18 +1091,16 @@ body .poly3 {
   right: 331.36px;
 }
 
-body .image-container-4 {
+body .poly4 {
   position: absolute;
   top: 1578px;
-  left: 344px;
-  overflow: hidden;
+  left: 355px;
 }
 
-body .image-container-5 {
+body .poly5 {
   position: absolute;
   top: 1739px;
   left: 274px;
-  overflow: hidden;
 }
 
 body .poly6 {
@@ -1092,7 +1109,7 @@ body .poly6 {
   right: 365px;
 }
 
-body .image-container-7 {
+body .poly7 {
   position: absolute;
   top: 2420px;
   left: 344px;
@@ -1103,38 +1120,54 @@ body .poly8 {
   position: absolute;
   top: 2907px;
   right: 231.14px;
-  z-index: 1;
+  z-index: -2;
 }
 
 .carousel {
   background-color: #E8E6DA;
-  padding-bottom: 40px;
 }
 
-.carousel #carouselExampleIndicators .carousel-indicators {
-  top: 250px;
+.carousel .container #carouselExampleIndicators .carousel-inner .carousel-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 240px;
+  width: 205px;
+  bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.carousel .carousel-inner {
-  margin: 0 auto;
+.carousel .container #carouselExampleIndicators .carousel-inner .carousel-item .img-instagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: auto;
 }
 
-.carousel .carousel-inner .carousel-item {
-  align-items: center;
-}
-
-.carousel .carousel-control-prev {
-  top: 250px;
-}
-
-.carousel .carousel-control-prev .carousel-control-prev-icon {
+.carousel .container #carouselExampleIndicators .carousel-control-prev {
+  width: 50px;
+  height: 50px;
   color: #ED282D;
+  bottom: 0px !important;
+  top: auto;
+  left: 0px;
 }
 
-.carousel .carousel-control-next {
-  top: 250px;
-}
-
-.carousel .carousel-control-next .carousel-control-next-icon {
+.carousel .container #carouselExampleIndicators .carousel-control-next {
+  width: 50px;
+  height: 50px;
   color: #ED282D;
+  bottom: 0px !important;
+  top: auto;
+  right: 0px;
+}
+
+.carousel .container #carouselExampleIndicators .carousel-indicators li {
+  height: 10px;
+  width: 10px;
+  background-color: #E9C8BE;
+}
+
+.carousel .container #carouselExampleIndicators .carousel-indicators li.active {
+  background-color: #ED282D;
 }
