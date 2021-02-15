@@ -243,6 +243,11 @@ body h6 {
   font-weight: "700";
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .animate {
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
@@ -698,6 +703,84 @@ body h6 {
 
 body > header {
   background-color: #FFF;
+  /*
+        nav {
+
+            box-shadow: 1px 5px 8px 2px $black;
+
+
+            #burguer {
+                width: auto;
+                height: 19px;
+                margin-top: 63px;
+            }
+
+            #logo {
+                display: inline-block;
+                width: 63px;
+                height: auto;
+                margin-top: 45px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 12px;
+            }
+
+            ul {
+                height: $gridgutter * 1.5;
+                list-style-type: none;
+                margin: 0;
+
+                li {
+                    display: inline-block;
+
+                    a {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        font-weight: 400;
+                        font-size: 0.75rem;
+                        line-height: $gridgutter * 1.5;
+                        height: $gridgutter * 1.5;
+                        letter-spacing: 1px;
+                        color: $primary;
+
+                        @media(min-width: $desktop) {
+                            letter-spacing: 2px;
+                        }
+
+                    }
+
+                }
+            }
+
+            &#customermenu {
+                i {
+                    font-family: $bodyfont;
+                    font-weight: $bodyfontweights;
+                    color: $primary;
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    margin-left: $gridgutter / 2;
+
+                    @media(min-width: $tablet) {
+                        margin-left: $gridgutter / 3;
+                    }
+
+                    @media(min-width: $desktop) {
+                        margin-left: $gridgutter / 2;
+                    }
+                }
+            }
+        }
+
+        #mainmenu {
+            display: none;
+        }
+
+
+
+        .mobile-colapse {
+            display: none;
+        } */
 }
 
 body > header .my-banner {
@@ -743,82 +826,6 @@ body > header .my-banner .sub-container .btnBox .cta-banner {
 body > header .my-banner .banner-title {
   position: absolute;
   top: 10px;
-}
-
-body > header nav {
-  box-shadow: 1px 5px 8px 2px #333333;
-}
-
-body > header nav #burguer {
-  width: auto;
-  height: 19px;
-  margin-top: 63px;
-}
-
-body > header nav #logo {
-  display: inline-block;
-  width: 63px;
-  height: auto;
-  margin-top: 45px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 12px;
-}
-
-body > header nav ul {
-  height: 30px;
-  list-style-type: none;
-  margin: 0;
-}
-
-body > header nav ul li {
-  display: inline-block;
-}
-
-body > header nav ul li a {
-  display: inline-block;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 30px;
-  height: 30px;
-  letter-spacing: 1px;
-  color: #ED282D;
-}
-
-@media (min-width: 1440px) {
-  body > header nav ul li a {
-    letter-spacing: 2px;
-  }
-}
-
-body > header nav#customermenu i {
-  font-family: "CentraNo2";
-  font-weight: "400";
-  color: #ED282D;
-  display: inline-block;
-  font-size: 1.2rem;
-  margin-left: 10px;
-}
-
-@media (min-width: 708px) {
-  body > header nav#customermenu i {
-    margin-left: 6.66667px;
-  }
-}
-
-@media (min-width: 1440px) {
-  body > header nav#customermenu i {
-    margin-left: 10px;
-  }
-}
-
-body > header #mainmenu {
-  display: none;
-}
-
-body > header .mobile-colapse {
-  display: none;
 }
 
 body p {
@@ -1171,3 +1178,123 @@ body .poly8 {
 .carousel .container #carouselExampleIndicators .carousel-indicators li.active {
   background-color: #ED282D;
 }
+
+
+/* BURGER MENU START*/
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+/* BURGER MENU END*/

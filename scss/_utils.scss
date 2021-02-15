@@ -1,4 +1,7 @@
-
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
  
  .animate{
      -webkit-transition: all $animationtime ease; 
